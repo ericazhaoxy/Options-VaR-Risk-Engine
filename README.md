@@ -18,3 +18,17 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 - `src/` — reusable Python modules (if extracted later)
 - `assets/cover/` — project images
 - `docs/` — report/notes
+
+## Quickstart
+
+### 1) Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the analysis
+   • Open the notebook in notebooks/ (recommended), or
+   • Run the script in src/ (if/when extracted later)
+
+Data is pulled from public sources (via yfinance) unless otherwise noted.
