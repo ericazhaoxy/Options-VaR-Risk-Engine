@@ -49,6 +49,12 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 - Horizon: 1 trading day
 - Metric: VaR at 95% confidence (historical calibration + Monte Carlo simulation)
 
+## Limitations
+
+- VIX is a proxy for implied volatility; mapping to option IV is simplified.
+- Black-Scholes assumes lognormal dynamics and constant volatility within each scenario.
+- Single-day horizon only; extensions could include multi-day simulation and stress testing.
+
 ## Quickstart
 
 ### 1) Install dependencies
