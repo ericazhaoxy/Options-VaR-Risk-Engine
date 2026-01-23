@@ -29,18 +29,25 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 ## Method overview (high level)
 
 1. Data & returns
-   • Download SPX and VIX daily levels
-   • Compute log returns for both series
+   - Download SPX and VIX daily levels
+   - Compute log returns for both series
 
 2. Dependence + scenario generation
-   • Transform marginals to allow heavy tails (Student-t style)
-   • Couple SPX and VIX with a dependence structure (copula / correlation)
-   • Generate Monte Carlo scenarios of 1-day shocks
+   - Transform marginals to allow heavy tails (Student-t style)
+   - Couple SPX and VIX with a dependence structure (copula / correlation)
+   - Generate Monte Carlo scenarios of 1-day shocks
 
 3. Repricing + VaR
-   • Reprice each option leg under simulated spot & vol shocks
-   • Aggregate to portfolio value → PnL distribution
-   • Report VaR as the 5th percentile loss (95% confidence)
+   - Reprice each option leg under simulated spot & vol shocks
+   - Aggregate to portfolio value → PnL distribution
+   - Report VaR as the 5th percentile loss (95% confidence)
+
+## Notes & assumptions
+
+- Pricing model: Black-Scholes (European call approximation)
+- Risk factors: SPX level and VIX-derived volatility shock (as a proxy)
+- Horizon: 1 trading day
+- Metric: VaR at 95% confidence (historical calibration + Monte Carlo simulation)
 
 ## Quickstart
 
