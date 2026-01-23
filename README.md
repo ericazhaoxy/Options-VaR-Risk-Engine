@@ -59,6 +59,10 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 
 Originally developed as a team project (Portfolio Risk / Derivatives). This repo packages the work as a reproducible “risk engine” artifact for portfolio / interview use.
 
+## Tech stack
+
+Python · NumPy · pandas · SciPy · statsmodels · yfinance · matplotlib · seaborn
+
 ## Quickstart
 
 ### 1) Install dependencies
