@@ -57,7 +57,7 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 
 ## Project context
 
-Originally developed as a team project (Portfolio Risk / Derivatives). This repo packages the work as a reproducible “risk engine” artifact for portfolio / interview use.
+Started as a team project for a Quantitative Risk Management course. I later continued it independently by packaging the work into a reproducible risk engine: cleaning and organizing the codebase, standardizing inputs/parameters for reruns, and adding documentation + repo structure so the full workflow (scenario simulation → repricing → PnL/VaR reporting) is easy to reproduce for portfolio use.
 
 ## Tech stack
 
@@ -77,3 +77,7 @@ pip install -r requirements.txt
 - Run the script in src/ (if/when extracted later)
 
 Data is pulled from public sources (via yfinance) unless otherwise noted.
+
+## License
+
+MIT — see LICENSE.
