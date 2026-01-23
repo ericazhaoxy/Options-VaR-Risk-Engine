@@ -55,6 +55,10 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 - Black-Scholes assumes lognormal dynamics and constant volatility within each scenario.
 - Single-day horizon only; extensions could include multi-day simulation and stress testing.
 
+## Project context
+
+Originally developed as a team project (Portfolio Risk / Derivatives). This repo packages the work as a reproducible “risk engine” artifact for portfolio / interview use.
+
 ## Quickstart
 
 ### 1) Install dependencies
