@@ -26,6 +26,22 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 - 1-day 95% VaR (Return): TBD
 - PnL distribution: see results/
 
+## Method overview (high level)
+
+1. Data & returns
+   • Download SPX and VIX daily levels
+   • Compute log returns for both series
+
+2. Dependence + scenario generation
+   • Transform marginals to allow heavy tails (Student-t style)
+   • Couple SPX and VIX with a dependence structure (copula / correlation)
+   • Generate Monte Carlo scenarios of 1-day shocks
+
+3. Repricing + VaR
+   • Reprice each option leg under simulated spot & vol shocks
+   • Aggregate to portfolio value → PnL distribution
+   • Report VaR as the 5th percentile loss (95% confidence)
+
 ## Quickstart
 
 ### 1) Install dependencies
@@ -34,8 +50,9 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 pip install -r requirements.txt
 ```
 
-2. Run the analysis
-   • Open the notebook in notebooks/ (recommended), or
-   • Run the script in src/ (if/when extracted later)
+### 2) Run the analysis
+
+- Open the notebook in notebooks/ (recommended), or
+- Run the script in src/ (if/when extracted later)
 
 Data is pulled from public sources (via yfinance) unless otherwise noted.
