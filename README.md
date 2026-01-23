@@ -19,6 +19,12 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 - `assets/cover/` — project images
 - `docs/` — report/notes
 
+## Key results
+
+- 1-day 95% VaR (PnL): TBD
+- 1-day 95% VaR (Return): TBD
+- PnL distribution: see results/
+
 ## Quickstart
 
 ### 1) Install dependencies
