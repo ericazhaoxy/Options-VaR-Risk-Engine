@@ -16,7 +16,7 @@ A reproducible Python risk engine that simulates joint SPX–VIX scenarios via a
 
 - `notebooks/` — analysis notebook(s)
 - `src/` — reusable Python modules (if extracted later)
-- 'results/' — figures/tables (PnL distribution, VaR summary)
+- `results/` — figures/tables (PnL distribution, VaR summary)
 - `assets/cover/` — project images
 - `docs/` — report/notes
 
